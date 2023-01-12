@@ -1,0 +1,39 @@
+.container {
+    display: grid;
+
+    grid-template-columns:100px repeat(4, 1fr);
+    grid-template-rows: 130px 80px 110px 180px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.container>div {
+    /* background-color: aquamarine; */
+    border-radius: 5px;
+}
+.sidebar{
+    background-color: #5a47ef;
+    grid-row: 1 / -1;
+}
+.header{
+    background-color: #c4c4c4;
+    grid-column: 2 / 6;
+}
+.chart-one{
+    grid-column: 2 / 4;
+    background-color: #c4c4c4;
+}
+.chart-two{
+    grid-column: 4 / -1;
+    background-color: #c4c4c4;
+}
+.overview{
+    background-color: #c4c4c4;
+    grid-column: 2 / 5;
+}
+.reminder{
+    background-color:#c4c4c4;
+}
+.state-one, .state-two, .state-three, .state-four{
+    background-color: #c4c4c4;
+}
